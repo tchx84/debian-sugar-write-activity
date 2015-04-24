@@ -1,0 +1,31 @@
+Source: sugar-write-activity
+Section: x11
+Priority: optional
+Maintainer: Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Build-Depends: cdbs (>= 0.4.97~),
+ devscripts,
+ debhelper,
+ dh-buildinfo,
+ python,
+ python-sugar3,
+ unzip
+Standards-Version: 3.9.1
+X-Python-Version: 2.7
+Vcs-Git: https://github.com/tchx84/sugar-write-activity.git
+Vcs-Browser: https://github.com/tchx84/sugar-write-activity.git
+DM-Upload-Allowed: yes
+
+Package: sugar-write-activity
+Architecture: all
+Depends: ${shlibs:Depends}, ${python:Depends}, ${cdbs:Depends}, ${misc:Depends}
+Recommends: ${cdbs:Recommends}
+Provides: ${python:Provides}, ${cdbs:Provides}
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Description: Sugar Write activity
+ Sugar is a graphical user interface aimed at children.
+ .
+ Write serves as a basic text editing application. Its
+ simple interface provides a easy startting point for
+ children.
